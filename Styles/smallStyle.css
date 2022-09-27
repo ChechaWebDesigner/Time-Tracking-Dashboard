@@ -1,0 +1,70 @@
+@media screen and (max-width: 800px) {
+
+    main {
+        width: 90%;
+        max-width: 400px;
+        min-width: 250px;
+        grid-row-gap: 1rem;
+    }
+
+    .item:first-child {
+        height: 250px;
+    }
+
+    .item:not(:first-child) {
+        height: 175px;
+    }
+
+    .personal-info {
+        align-items: center;
+    }
+    
+    .personal-info-person {
+        display: inline-block;
+    }
+
+    .img-person {
+        width: 20%;
+        min-width: 60px;
+        min-height: 60px;
+        margin-right: 1.25rem;
+    }
+
+    .name {
+        font-size: 1.5rem;
+    }
+
+
+    .change-time {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .current,
+    .previous {
+        grid-column: span 6;
+    }
+
+    .current {
+        font-size: 2.5rem;
+    }
+
+    .previous {
+        font-size: 1rem;
+        align-items: flex-end;
+    }
+
+    main .item.col-2,
+    main .item.col-3,
+    main .item.col-4,
+    main .item.col-5,
+    main .item.col-6,
+    main .item.col-7,
+    main .item.col-8,
+    main .item.col-9,
+    main .item.col-10,
+    main .item.col-11,
+    main .item.col-12 {
+        grid-column: span 12;
+    }
+}

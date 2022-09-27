@@ -1,0 +1,38 @@
+@media screen and (min-width: 800px) {
+
+    main {
+        width: 75%;
+        min-width: 750px;
+        grid-template-columns: repeat(12, minmax(40px, 1fr));
+        grid-gap: 1rem;
+    }
+
+    .personal-info {
+        flex-direction: column;
+    }
+
+    .img-person {
+        width: 40%;
+    }
+    
+    .change-time{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-item {
+        grid-row: span 2;
+    }
+
+    .current,
+    .previous {
+        grid-column: span 12;
+    }
+
+    .current {
+        font-size: 2.5rem;
+        padding: 1rem 0 0.5rem;
+    }
+
+}

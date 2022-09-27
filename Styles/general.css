@@ -1,0 +1,291 @@
+/* Import font */
+
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+
+/* Variables */
+
+:root {
+    --blue: hsl(246, 80%, 60%);
+    --lightRedWork: hsl(15, 100%, 70%);
+    --softBlue: hsl(195, 74%, 62%);
+    --lightRedStudy: hsl(348, 100%, 68%);
+    --limeGreen: hsl(145, 58%, 55%);
+    --violet: hsl(264, 64%, 52%);
+    --softOrange: hsl(43, 84%, 65%);
+    --veryDarkBlue: hsl(226, 43%, 10%);
+    --darkBlue: hsl(235, 46%, 20%);
+    --desaturatedBlue: hsl(235, 45%, 61%);
+    --paleBlue: hsl(236, 100%, 87%);
+    --borderRd: 12px;
+    --white: #ffffff;
+}
+
+/* General font family */
+
+* {
+    font-family: 'Rubik', sans-serif;
+}
+
+/* Body configuration */
+
+body {
+    display: flex;
+    min-height: 100vh;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--veryDarkBlue);
+    padding: 2rem 0;
+}
+
+/* Grid System */
+
+.grid-element {
+    display: grid;
+    grid-template-columns: repeat(12,  1fr);
+    grid-template-rows: auto;
+}
+
+.col-2 {
+    grid-column: span 2;
+}
+
+.col-3 {
+    grid-column: span 3;
+}
+
+.col-4 {
+    grid-column: span 4;
+}
+
+.col-5 {
+    grid-column: span 5;
+}
+
+.col-6 {
+    grid-column: span 6;
+}
+
+.col-7 {
+    grid-column: span 7;
+}
+
+.col-8 {
+    grid-column: span 8;
+}
+
+.col-9 {
+    grid-column: span 9;
+}
+
+.col-10 {
+    grid-column: span 10;
+}
+
+.col-12 {
+    grid-column: span 12;
+}
+
+/* items elements */
+
+.item {
+    height: 100%;
+    min-height: 150px;
+}
+
+/* nav-item */
+
+.nav-item {
+    background-color: var(--darkBlue);
+}
+
+.personal-info {
+    display: flex;
+    background-color: var(--blue);
+}
+
+/* Personal Info */
+
+.img-person {
+    margin-bottom: 1rem;
+    padding: 0.1rem;
+    background-color: var(--white);
+    border-radius: 50%;
+}
+
+.personal-info-person {
+    margin: 1.15rem 0;
+}
+
+.report {
+    margin-bottom: 0.5rem;
+}
+
+.name {
+    font-weight: 300;
+    font-size: 2rem;
+}
+
+/* Btns to change */
+
+.change-time{
+    display: flex;
+}
+
+.change-time button {
+    background-color: transparent;
+    color: var(--white);
+    border: none;
+    cursor: pointer;
+}
+
+.change-time button:nth-child(2) {
+    margin: 1rem 0;
+}
+
+/* Items */
+
+.item:not(:first-child) {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-repeat: no-repeat;
+    background-position: 90% -15%;
+    padding-top: 2rem;
+}
+
+/* Work */
+
+.item:nth-child(2) {
+    background-color: var(--lightRedWork);
+    background-image: url(./../images/icon-work.svg);
+}
+
+/* Play */
+
+.item:nth-child(3) {
+    background-color: var(--softBlue);
+    background-image: url(./../images/icon-play.svg);
+}
+
+/* Study */
+
+.item:nth-child(4) {
+    background-color: var(--lightRedStudy);
+    background-image: url(./../images/icon-study.svg);
+}
+
+/* Exercise */
+
+.item:nth-child(5) {
+    background-color: var(--limeGreen);
+    background-image: url(./../images/icon-exercise.svg);
+}
+
+/* Social */
+
+.item:nth-child(6) {
+    background-color: var(--violet);
+    background-image: url(./../images/icon-social.svg);
+}
+
+/* Self Care */
+
+.item:last-child {
+    background-color: var(--softOrange);
+    background-image: url(./../images/icon-self-care.svg);
+}
+
+/* Information */
+
+.information {
+    background-color: var(--darkBlue);
+    transition: 0.35s;
+}
+
+.title {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.current {
+    font-weight: 300;
+}
+
+.previous {
+    color: var(--paleBlue);
+}
+
+/* information items flex */
+
+.information div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Options ellipsis */
+
+.option {
+    align-items: flex-end;
+}
+
+.option svg {
+    width: 10%;
+    min-width: 20px;
+}
+
+/* Padding */
+
+.padding-element {
+    padding: 1.5rem;
+}
+
+/* Semi transparent color */
+
+.semi-transparent-color {
+    opacity: 50%;
+}
+
+/* Border Radius */
+
+.item,
+.personal-info,
+.information {
+    border-radius: var(--borderRd);
+}
+
+/* White color */
+
+.personal-info-person,
+.title,
+.current {
+    color: var(--white);
+}
+
+.report,
+.previous {
+    font-size: 0.85rem;
+}
+
+/* Hover */
+
+.information:hover {
+    background-color: hsl(235, 40%, 32%)
+}
+
+.option:hover {
+    cursor: pointer;
+}
+
+.option:hover svg path{
+    fill: var(--white);
+}
+
+.btn-change:hover {
+    opacity: 100;
+}
+
+.active {
+    opacity: 100;;
+}
